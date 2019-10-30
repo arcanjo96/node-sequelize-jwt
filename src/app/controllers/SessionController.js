@@ -13,7 +13,7 @@ class SessionController {
     });
 
     if (!(await schema.isValid(req.body))) {
-      return res.status(400).json({ error: "Campos inv·lidos." });
+      return res.status(400).json({ error: "Campos inv√°lidos." });
     }
 
     const { email, password } = req.body;
